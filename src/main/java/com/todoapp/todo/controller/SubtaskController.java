@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.todoapp.todo.entity.Subtask;
 import com.todoapp.todo.service.SubtaskService;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @Controller
+@CrossOrigin("https://todo-deploy-2.herokuapp.com")
 @RequestMapping(value = "/api/todos/subtask")
 public class SubtaskController {
 	
